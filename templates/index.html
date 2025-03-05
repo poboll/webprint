@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <title>上传并打印 - HP LaserJet P1007</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(120deg, #eeeeee, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 8px;
+      padding: 20px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    h1 {
+      font-size: 1.2rem; margin-bottom: 20px; color: #333;
+    }
+    input[type="file"] {
+      margin: 10px 0;
+    }
+    .btn {
+      background: #f7f7f7;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 6px 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ebebeb;
+    }
+    .msg {
+      margin-top: 15px; min-height: 20px; font-size: 0.95rem; color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>上传文件并打印</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <br/>
+      <button class="btn" type="submit">提交打印</button>
+    </form>
+    <div class="msg">{{ msg }}</div>
+  </div>
+</body>
+</html>
