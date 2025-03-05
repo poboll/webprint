@@ -10,6 +10,9 @@
 - 办公室环境：无需专业文档管理，只想简单通过局域网网页上传并自动打印
 - 自助打印：在局域网中让员工/客户直接上传文档并打印
 
+![](https://github.com/user-attachments/assets/bb18e927-55fd-4f12-a203-bde3c91b5a42)
+![](https://github.com/user-attachments/assets/8ffa78bb-bd63-4b2e-a2c2-524c30864bf3)
+
 > **注意**：只能在 **Windows** 环境下使用，因为依赖 `pywin32` 库（win32api、win32print 等）进行打印操作。
 
 ## 功能特性
